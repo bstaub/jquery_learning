@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+    <script src="jquery-1.10.2.js"></script>
+
+    <!--
+    More Examples of jQuery Selectors
+    ----------------------------------
+    http://www.w3schools.com/jquery/jquery_selectors.asp
+
+    $("*") 	Selects all elements 	Try it
+    $(this) 	Selects the current HTML element 	Try it
+    $("p.intro") 	Selects all <p> elements with class="intro" 	Try it
+    $("p:first") 	Selects the first <p> element 	Try it
+    $("ul li:first") 	Selects the first <li> element of the first <ul> 	Try it
+    $("ul li:first-child") 	Selects the first <li> element of every <ul> 	Try it
+    $("[href]") 	Selects all elements with an href attribute 	Try it
+    $("a[target='_blank']") 	Selects all <a> elements with a target attribute value equal to "_blank" 	Try it
+    $("a[target!='_blank']") 	Selects all <a> elements with a target attribute value NOT equal to "_blank" 	Try it
+    $(":button") 	Selects all <button> elements and <input> elements of type="button" 	Try it
+    $("tr:even") 	Selects all even <tr> elements 	Try it
+    $("tr:odd") 	Selects all odd <tr> elements
+    -->
+
+    <script>
+        $(document).ready(function(){
+            $("tr:even").css("background-color","grey");
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+
+<h1>Welcome to My Web Page</h1>
+
+<table border="1">
+    <tr>
+        <th>Vorname</th>
+        <th>Nachname</th>
+    </tr>
+    <tr>
+        <td>Bruno</td>
+        <td>Staub</td>
+    </tr>
+    <tr>
+        <td>Hans</td>
+        <td>Staub</td>
+    </tr>
+    <tr>
+        <td>Isabel</td>
+        <td>Staub</td>
+    </tr>
+    <tr>
+        <td>Nadine</td>
+        <td>Jordi</td>
+    </tr>
+    <tr>
+        <td>Rita</td>
+        <td>Staub</td>
+    </tr>
+</table>
+
+</body>
+</html>

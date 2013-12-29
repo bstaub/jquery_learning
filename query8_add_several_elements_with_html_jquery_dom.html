@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+    <script src="jquery-1.10.2.js"></script>
+
+    <script>
+        function appendText()
+        {
+            var txt1="<p>Text mit HTML.</p>";              // Create text with HTML
+            var txt2=$("<p></p>").text("Text mit jQuery.");  // Create text with jQuery
+            var txt3=document.createElement("p");
+            txt3.innerHTML="Text mit DOM.";               // Create text with DOM
+            $("body").append(txt1,txt2,txt3);        // Append new elements
+        }
+    </script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<button onclick="appendText()">Append text</button>
+
+</body>
+</html>

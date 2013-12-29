@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+    <script src="jquery-1.10.2.js"></script>
+
+    <!--
+    Basic syntax is: $(selector).action()
+
+    A $ sign to define/access jQuery
+    A (selector) to "query (or find)" HTML elements
+    A jQuery action() to be performed on the element(s)
+
+    Examples:
+
+    $(this).hide() - hides the current element.
+    $("p").hide() - hides all <p> elements.
+    $(".test").hide() - hides all elements with class="test".
+    $("#test").hide() - hides the element with id="test".
+
+    Mac Keyboard:
+    Alt+3 ==> #
+    Alt+56 ==> []
+    Alt+89 ==> {}
+    -->
+
+    <script>
+        $(document).ready(function(){
+            $("#but1").click(function(){
+                $("#test1").hide();
+            });
+            $("#but2").click(function(){
+                $(".test2").hide();
+            });
+            $("#but1s").click(function(){
+                $("#test1").show();
+            });
+            $("#but2s").click(function(){
+                $(".test2").show();
+            });
+
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+
+<p id="test1">hallo Welt id test1</p>
+<p class="test2">hallo Welt class test2</p>
+<button id="but1">hide id test1</button>
+<button id="but2">hide class test2</button>
+<button id="but1s">show id test1</button>
+<button id="but2s">show class test2</button>
+
+</body>
+</html>

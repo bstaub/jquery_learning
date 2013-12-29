@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+
+
+    <script src="jquery-1.10.2.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p.p1").hide(3000,function(){
+                    alert("Diese Meldung mit Callback wird erst angezeigt, sobald die hide time 3000 --> 3s abgeschlossen ist!");
+                });
+            });
+            $("#btn2").click(function(){
+                $("p.p2").hide(3000);
+                alert("Diese Meldung erscheit ohne Callback sofort!");
+            });
+        });
+    </script>
+</head>
+<body>
+<button id="btn1">Hide mit Callback</button>
+<button id="btn2">Hide ohne Callback</button>
+<p class="p1">Blende langsam diesen Inhalt aus Callback Knopf....</p>
+<p class="p2">Blende langsam diesen Inhalt aus ohne Callback Knopf....</p>
+
+
+</body>
+</html>

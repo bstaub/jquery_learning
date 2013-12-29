@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+
+
+    <script src="jquery-1.10.2.js"></script>
+
+    <script>
+    $(document).ready(function(){
+    $("button").click(function(){
+    var div=$("div");
+    div.animate({height:'300px',opacity:'0.4'},"slow");
+    div.animate({width:'300px',opacity:'0.8'},"slow");
+    div.animate({height:'100px',opacity:'0.4'},"slow");
+    div.animate({width:'100px',opacity:'0.8'},"slow");
+    });
+    });
+    </script>
+    </head>
+
+            <body>
+            <button>Start Animation</button>
+            <p>Per default, haben alle HTML Elemente eine static position und koennen nicht verschoben werden.
+               Um die Position zu verschieben, musst du zwingend property relative, fixed, or absolute definiert haben!</p>
+
+            <div style="background:#98bf21;height:100px;width:100px;position:absolute;">
+            </div>
+
+</body>
+</html>

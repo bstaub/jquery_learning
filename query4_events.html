@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+    <script src="jquery-1.10.2.js"></script>
+
+    <!--
+    Mouse Events 	Keyboard Events 	Form Events 	Document/Window Events
+    click 	        keypress 	        submit 	        load
+    dblclick 	    keydown 	        change 	        resize
+    mouseenter 	    keyup 	            focus 	        scroll
+    mouseleave 	  	                    blur 	        unload
+
+    -->
+
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","#ccc");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","#fff");
+            });
+        });
+    </script>
+</head>
+<body>
+
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
+</body>
+</html>

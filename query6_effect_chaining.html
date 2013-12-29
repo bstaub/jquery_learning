@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+
+
+    <script src="jquery-1.10.2.js"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("button.bnt1").click(function(){
+                $("#p1").css("color","red").slideUp(2000).slideDown(2000);
+            });
+            $("button.bnt2").click(function(){
+                $("#p2").css("color","red")
+                        .slideUp(2000)
+                        .slideDown(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+
+<p id="p1">jQuery is fun!! v1</p>
+<p id="p2">jQuery is fun!! v2</p>
+
+<button class="bnt1">klick hier for chaining v1</button>
+<button class="bnt2">klick hier for chaining v2</button>
+
+</body>
+</html>

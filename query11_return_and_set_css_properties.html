@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+    <script src="jquery-1.10.2.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button.bnt1").click(function(){
+                alert("Background color vom ersten roten paragraph = " + $("p").css("background-color"));
+            });
+            $("button.bnt2").click(function(){
+                $("p").css("background-color","yellow");
+            });
+            $("button.bnt3").click(function(){
+                $("p").css({"background-color":"yellow","font-size":"200%"});
+            });
+        });
+    </script>
+</head>
+
+<body>
+<h2>This is a heading</h2>
+<p style="background-color:#ff0000">This is a paragraph.</p>
+<p style="background-color:#00ff00">This is a paragraph.</p>
+<p style="background-color:#0000ff">This is a paragraph.</p>
+<button class="bnt1">Return first background-color of p</button>
+<button class="bnt2">Set background-color of p all yellow</button>
+<button class="bnt3">Set multiple things background-color of p and fontsize</button>
+</body>
+</html>
+

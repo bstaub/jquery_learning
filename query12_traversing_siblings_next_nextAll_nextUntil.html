@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+
+    <style>
+        /* gilt für alle Elemente (*) innerhalb von .siblings  */
+        .siblings *
+        {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+
+    <script src="jquery-1.10.2.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#box1 h2").siblings().css({"color":"red","border":"2px solid red"});
+            $("#box2 h2").siblings("p").css({"color":"red","border":"2px solid red"});
+            $("#box3 h2").next().css({"color":"red","border":"2px solid red"});
+            $("#box4 h2").nextAll().css({"color":"red","border":"2px solid red"});
+            $("#box5 h2").nextUntil("h6").css({"color":"red","border":"2px solid red"});
+        });
+    </script>
+</head>
+<body class="siblings">
+
+<h1>$("h2").siblings().css.. (gleiche Ebene ohne h2)</h1>
+
+<div id="box1">div (parent)
+    <p>p</p>
+    <span>span</span>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <p>p</p>
+</div>
+
+<h1>$("h2").siblings(p).css.. (gleiche Ebene ohne h2, nur p)</h1>
+
+<div id="box2">div (parent)
+    <p>p</p>
+    <span>span</span>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <p>p</p>
+</div>
+
+<h1>$("h2").next().css.. (nur sibling nach h2)</h1>
+
+<div id="box3">div (parent)
+    <p>p</p>
+    <span>span</span>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <p>p</p>
+</div>
+
+<h1>$("h2").nextAll().css.. (alle sibling nach h2)</h1>
+
+<div id="box4">div (parent)
+    <p>p</p>
+    <span>span</span>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <p>p</p>
+</div>
+
+
+<h1>$("h2").nextUntil("h6").css.. (sibling h3-h5 ohne h2 und h6!)</h1>
+
+<div id="box5">div (parent)
+    <p>p</p>
+    <span>span</span>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <p>p</p>
+</div>
+
+
+</body>
+</html>
+

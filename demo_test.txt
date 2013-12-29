@@ -1,0 +1,4 @@
+<h2>Bruno: jQuery and AJAX is FUN!!!</h2>
+<p>This is some text in a paragraph.</p>
+<p id="p1">dieser Text kommt von einem externen Server :-))</p>
+<p>1 2 3 Test...</p>

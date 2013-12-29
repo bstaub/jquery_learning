@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>query1</title>
+<head>
+
+    <script src="jquery-1.10.2.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $("div#box1 p").first().css("background-color","yellow");
+          $("div#box2 p").last().css("background-color","yellow");
+          $("div#box3 p").eq(1).css("background-color","yellow");
+          $("div#box4 p").filter(".intro").css("background-color","yellow");
+          $("div#box5 p").not(".intro").css("background-color","yellow");
+        });
+    </script>
+    </head>
+<body>
+
+<h1>Select .first p element</h1>
+
+<div id="box1">
+<div>
+    <p>This is a paragraph in a div.</p>
+</div>
+
+<div>
+    <p>This is a paragraph in another div.</p>
+</div>
+
+<p>This is also a paragraph.</p>
+</div>
+
+
+<h1>Select .last p element</h1>
+
+<div id="box2">
+    <div>
+        <p>This is a paragraph in a div.</p>
+    </div>
+
+    <div>
+        <p>This is a paragraph in another div.</p>
+    </div>
+
+    <p>This is also a paragraph.</p>
+</div>
+
+<h1>Select p .eq(1)</h1>
+
+<div id="box3">
+    <p>My name is Donald (index 0).</p>
+    <p>Donald Duck (index 1).</p>
+    <p>I live in Duckburg (index 2).</p>
+    <p>My best friend is Mickey (index 3).</p>
+</div>
+
+<h1>Select .filter intro</h1>
+
+<div id="box4">
+    <p>My name is Donald.</p>
+    <p class="intro">I live in Duckburg.</p>
+    <p class="introx">hehehe.</p>
+    <p class="intro">I love Duckburg.</p>
+    <p>My best friend is Mickey.</p>
+</div>
+
+<h1>Select .not intro</h1>
+
+<div id="box5">
+    <p>My name is Donald.</p>
+    <p class="intro">I live in Duckburg.</p>
+    <p class="introx">hehehe.</p>
+    <p class="intro">I love Duckburg.</p>
+    <p>My best friend is Mickey.</p>
+</div>
+
+</body>
+</html>
+
